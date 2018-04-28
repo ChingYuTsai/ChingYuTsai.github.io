@@ -12,7 +12,7 @@ tags:
   - blog
 ---
 
-### Jekyll基本設定 ###
+### 基本設定 ###
 
 在terminal輸入以下指令
 
