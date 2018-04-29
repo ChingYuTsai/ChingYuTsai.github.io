@@ -6,10 +6,11 @@ classes:
 title:  "Jekyll設定"
 date:   2018-03-01 17:07:45 +0800
 categories: 
-  - jekyll
+  - Jekyll
 tags:
-  - jekyll
-  - blog
+  - Jekyll
+  - Blog
+  - GitHub
 ---
 
 ### 基本設定 ###
@@ -21,7 +22,7 @@ tags:
 	~ $ cd myblog
 	~/myblog $ bundle exec jekyll serve
 
- => Now browse to http://localhost:4000
+ => 瀏覽 http://localhost:4000
 
 -------
 
@@ -31,4 +32,21 @@ tags:
 
 [Minimal-Mistakes]: https://mmistakes.github.io/minimal-mistakes/
 
+-------
 
+### 部屬至Github ###
+
+使用Github內建的github.io網址
+
+	~/myblog $ git init
+	~/myblog $ git add .
+	~/myblog $ git commit -m 'init git'
+
+	git remote add origin https://github.com/account/account.github.io.git
+	git push -u origin master
+
+新增文章後push至GitHub
+
+	~/myblog $ git add .
+	~/myblog $ git commit -m 'add new post'
+	~/myblog $ git push -u origin [gh-pages|master]
